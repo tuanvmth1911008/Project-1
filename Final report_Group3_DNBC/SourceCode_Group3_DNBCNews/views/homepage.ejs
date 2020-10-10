@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head') -%>
+    <title>DNBC International - Breaking News and World News</title>
+    <link rel="stylesheet" href="css/homepage.css" type="text/css">
+</head>
+<body>
+    <%- include('header') -%>
+                <div id="site-grid" style="transform: none;margin-top: 0px">
+                    <div id="site-wall-small">
+                        <div id="main-body-wrap">
+                            <div class="body-main">
+                                <div class="top-site">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="hot-new col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                <a href="/post/<%-politic_lastest[0].PostID %>">
+                                                    <div class="post-img">
+                                                        <img src="<%- politic_lastest[0].Link %>">
+                                                    </div>
+                                                    <p class="first-new"><%- politic_lastest[0].PostTitle %></p>
+                                                </a>
+                                                <h5>Politics</h5>
+                                                <h4><%- politic_lastest[0].PostWriter %> <i class="far fa-clock"></i> <%- politic_lastest[0].PostDateTime %></h4>
+                                            </div>
+                                            <div class="hot-new col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                                <a href="/post/<%-business_lastest[0].PostID %>">
+                                                    <div class="post-img">
+                                                        <img src="<%- business_lastest[0].Link %>">
+                                                    </div>
+                                                    <p class="second-new"><%- business_lastest[0].PostTitle %></p>
+                                                </a>
+                                                <h5>Bussiness</h5>
+                                                <h4><%- business_lastest[0].PostWriter %> <i class="far fa-clock"></i> <%- business_lastest[0].PostDateTime %></h4>
+                                            </div>
+                                            <div class="hot-new col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                                <a href="/post/<%-world_lastest[0].PostID %>">
+                                                    <div class="post-img">
+                                                        <img src="<%- world_lastest[0].Link %>">
+                                                    </div>
+                                                    <p class="second-new"><%- world_lastest[0].PostTitle %></p>
+                                                </a>
+                                                <h5>World</h5>
+                                                <h4><%- world_lastest[0].PostWriter %>  <i class="far fa-clock"></i>  <%- world_lastest[0].PostDateTime %></h4>
+                                            </div>
+                                            <div class="main-title col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <span class="dnbc-main-title">
+                                                World News
+                                            </span>
+                                            </div>
+                                            <div class="hot-new col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                                <a href="/post/<%- world_lastest[1].PostID %>">
+                                                    <div class="post-img">
+                                                        <img src="<%- world_lastest[1].Link %>">
+                                                    </div>
+                                                    <p class="third-new"><%- world_lastest[1].PostTitle %></p>
+                                                </a>
+                                                <h5>World</h5>
+                                                <h4><%- world_lastest[1].PostWriter %> <i class="far fa-clock"></i> <%- world_lastest[1].PostDateTime %></h4>
+                                            </div>
+                                            <div class="hot-new col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                                <a href="/post/<%- world_lastest[2].PostID %>">
+                                                    <div class="post-img">
+                                                        <img src="<%- world_lastest[2].Link %>">
+                                                    </div>
+                                                    <p class="third-new"><%- world_lastest[2].PostTitle %></p>
+                                                </a>
+                                                <h5>World</h5>
+                                                <h4><%- world_lastest[2].PostWriter %> <i class="far fa-clock"></i> <%- world_lastest[2].PostDateTime %></h4>
+                                            </div>
+                                            <div class="hot-new col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                                <a href="/post/<%- world_lastest[3].PostID %>">
+                                                    <div class="post-img">
+                                                        <img src="<%- world_lastest[3].Link %>">
+                                                    </div>
+                                                    <p class="third-new"><%- world_lastest[3].PostTitle %></p>
+                                                </a>
+                                                <h5>World</h5>
+                                                <h4><%- world_lastest[3].PostWriter %> <i class="far fa-clock"></i> <%- world_lastest[3].PostDateTime %></h4>
+                                            </div>
+                                            <div class="hot-new col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                                <a href="/post/<%- world_lastest[4].PostID %>">
+                                                    <div class="post-img">
+                                                        <img src="<%- world_lastest[4].Link %>">
+                                                    </div>
+                                                    <p class="third-new"><%- world_lastest[4].PostTitle %></p>
+                                                </a>
+                                                <h5>World</h5>
+                                                <h4><%- world_lastest[4].PostWriter %> <i class="far fa-clock"></i> <%- world_lastest[4].PostDateTime %></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mid-site">
+                                    <a href="/post/<%- business_lastest[1].PostID %>">
+                                        <div class="art-img">
+                                            <img src="<%- business_lastest[1].Link %>">
+                                        </div>
+                                    </a>
+                                    <div class="art-text">
+                                        <div class="container">
+                                            <h3 class="s-cat">
+                                                <span class="s-cat">Bussiness</span>
+                                            </h3>
+                                            <div class="art-title">
+                                                <a href="/post/<%- business_lastest[1].PostID %>">
+                                                    <h2 class="art-title1">
+                                                        <%- business_lastest[1].PostTitle %>
+                                                    </h2>
+                                                </a>
+                                            </div>
+                                            <h4><%- business_lastest[1].PostWriter %> <i class="far fa-clock"></i> <%- business_lastest[1].PostDateTime %></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="top-site1">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="main-title col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <span class="dnbc-main-title">
+                                                    Business News
+                                                </span>
+                                            </div>
+                                            <div class="hot-new col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                                <a href="/post/<%- business_lastest[2].PostID %>">
+                                                    <div class="post-img">
+                                                        <img src="<%- business_lastest[2].Link %>">
+                                                    </div>
+                                                    <p class="third-new"><%- business_lastest[2].PostTitle %></p>
+                                                </a>
+                                                <h5>Business</h5>
+                                                <h4><%- business_lastest[2].PostWriter %> <i class="far fa-clock"></i> <%- business_lastest[2].PostDateTime %></h4>
+                                            </div>
+                                            <div class="hot-new col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                                <a href="/post/<%- business_lastest[3].PostID %>">
+                                                    <div class="post-img">
+                                                        <img src="<%- business_lastest[3].Link %>">
+                                                    </div>
+                                                    <p class="third-new"><%- business_lastest[3].PostTitle %></p>
+                                                </a>
+                                                <h5>Business</h5>
+                                                <h4><%- business_lastest[3].PostWriter %> <i class="far fa-clock"></i> <%- business_lastest[3].PostDateTime %></h4>
+                                            </div>
+                                            <div class="hot-new col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                                <a href="/post/<%- business_lastest[4].PostID %>">
+                                                    <div class="post-img">
+                                                        <img src="<%- business_lastest[4].Link %>">
+                                                    </div>
+                                                    <p class="third-new"><%- business_lastest[4].PostTitle %></p>
+                                                </a>
+                                                <h5>Business</h5>
+                                                <h4><%- business_lastest[4].PostWriter %> <i class="far fa-clock"></i> <%- business_lastest[4].PostDateTime %></h4>
+                                            </div>
+                                            <div class="hot-new col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                                <a href="/post/<%- business_lastest[5].PostID %>">
+                                                    <div class="post-img">
+                                                        <img src="<%- business_lastest[5].Link %>">
+                                                    </div>
+                                                    <p class="third-new"><%- business_lastest[5].PostTitle %></p>
+                                                </a>
+                                                <h5>Business</h5>
+                                                <h4><%- business_lastest[5].PostWriter %> <i class="far fa-clock"></i> <%- business_lastest[5].PostDateTime %></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mid-site">
+                                    <a href="/post/<%- politic_lastest[2].PostID %>">
+                                        <div class="art-img">
+                                            <img src="<%- politic_lastest[2].Link %>">
+                                        </div>
+                                    </a>
+                                    <div class="art-text">
+                                        <div class="container">
+                                            <h3 class="s-cat">
+                                                <span class="s-cat">Politics</span>
+                                            </h3>
+                                            <div class="art-title">
+                                                <a href="/post/<%- politic_lastest[2].PostID %>">
+                                                    <h2 class="art-title1">
+                                                        <%- politic_lastest[2].PostTitle %>
+                                                    </h2>
+                                                </a>
+                                            </div>
+                                            <h4><%- politic_lastest[2].PostWriter %> <i class="far fa-clock"></i> <%- politic_lastest[2].PostDateTime %></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bot-site">
+                                    <div class="container">
+                                            <div class="bot-site-left col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                                                <div class="row">
+                                                    <div class="bot-new bot-new-main col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <a href="/post/<%- politic_lastest[4].PostID %>" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                            <div class="posts-img">
+                                                                <img src="<%- politic_lastest[4].Link %>">
+                                                            </div>
+                                                        </a>
+                                                        <div class="bot-site-text col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                                            <h5>POLITICS</h5>
+                                                            <a href="/post/<%- politic_lastest[4].PostID %>"><p><%- politic_lastest[4].PostTitle %></p></a>
+                                                            <h4><%- politic_lastest[4].PostWriter %> <i class="far fa-clock"></i> <%- politic_lastest[4].PostDateTime %></h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bot-new bot-new-mid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <a href="/post/<%- politic_lastest[5].PostID %>" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                            <div class="posts-img">
+                                                                <img src="<%- politic_lastest[5].Link %>">
+                                                            </div>
+                                                        </a>
+                                                        <div class="bot-site-text col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                                            <h5>POLITICS</h5>
+                                                            <a href="/post/<%- politic_lastest[5].PostID %>"><p><%- politic_lastest[5].PostTitle %></p></a>
+                                                            <h4><%- politic_lastest[5].PostWriter %> <i class="far fa-clock"></i> <%- politic_lastest[5].PostDateTime %></h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bot-new bot-new-mid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <a href="/post/<%- politic_lastest[6].PostID %>" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                            <div class="posts-img">
+                                                                <img src="<%- politic_lastest[6].Link %>">
+                                                            </div>
+                                                        </a>
+                                                        <div class="bot-site-text col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                                            <h5>POLITICS</h5>
+                                                            <a href="/post/<%- politic_lastest[6].PostID %>"><p><%- politic_lastest[6].PostTitle %></p></a>
+                                                            <h4><%- politic_lastest[6].PostWriter %> <i class="far fa-clock"></i> <%- politic_lastest[6].PostDateTime %></h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bot-new bot-new-mid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <a href="/post/<%- politic_lastest[7].PostID %>" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                            <div class="posts-img">
+                                                                <img src="<%- politic_lastest[7].Link %>">
+                                                            </div>
+                                                        </a>
+                                                        <div class="bot-site-text col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                                            <h5>POLITICS</h5>
+                                                            <a href="/post/<%- politic_lastest[7].PostID %>"><p><%- politic_lastest[7].PostTitle %></p></a>
+                                                            <h4><%- politic_lastest[7].PostWriter %> <i class="far fa-clock"></i> <%- politic_lastest[7].PostDateTime %></h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bot-new bot-new-mid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <a href="/post/<%- politic_lastest[8].PostID %>" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                            <div class="posts-img">
+                                                                <img src="<%- politic_lastest[8].Link %>">
+                                                            </div>
+                                                        </a>
+                                                        <div class="bot-site-text col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                                            <h5>POLITICS</h5>
+                                                            <a href="/post/<%- politic_lastest[8].PostID %>"><p><%- politic_lastest[8].PostTitle %></p></a>
+                                                            <h4><%- politic_lastest[8].PostWriter %> <i class="far fa-clock"></i> <%- politic_lastest[8].PostDateTime %></h4>
+                                                        </div>
+                                                    </div>
+                                                    <a href="/categories/6" class="more-post col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        more posts
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="bot-site-right col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                                                <div class="bot-ad col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                                                    <span>advertisement</span>
+                                                    <a href="#">
+                                                        <img src="http://mvpthemes.com/zoxpress/zoxpress-entertainment1/wp-content/uploads/sites/3/2020/01/zoxpress300x250.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="bot-trend col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                                                    <div class="widget-side-head col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        Trending
+                                                    </div>
+                                                    <div class="widget-trend">
+                                                        <span class="col-xs-2 col-sm-2 col-md-2 col-lg-2">1</span>
+                                                        <a href="/post/<%- trending[0].PostID %>" class="col-xs-10 col-sm-10 col-md-10 col-lg-10"><%-trending[0].PostTitle%></a>
+                                                    </div>
+                                                    <div class="widget-trend">
+                                                        <span class="col-xs-2 col-sm-2 col-md-2 col-lg-2">2</span>
+                                                        <a href="/post/<%- trending[1].PostID %>" class="col-xs-10 col-sm-10 col-md-10 col-lg-10"><%-trending[1].PostTitle%></a>
+                                                    </div>
+                                                    <div class="widget-trend">
+                                                        <span class="col-xs-2 col-sm-2 col-md-2 col-lg-2">3</span>
+                                                        <a href="/post/<%- trending[2].PostID %>" class="col-xs-10 col-sm-10 col-md-10 col-lg-10"><%-trending[2].PostTitle%></a>
+                                                    </div>
+                                                    <div class="widget-trend">
+                                                        <span class="col-xs-2 col-sm-2 col-md-2 col-lg-2">4</span>
+                                                        <a href="/post/<%- trending[3].PostID %>" class="col-xs-10 col-sm-10 col-md-10 col-lg-10"><%-trending[3].PostTitle%></a>
+                                                    </div>
+                                                    <div class="widget-trend">
+                                                        <span class="col-xs-2 col-sm-2 col-md-2 col-lg-2">5</span>
+                                                        <a href="/post/<%- trending[4].PostID %>" class="col-xs-10 col-sm-10 col-md-10 col-   lg-10"><%-trending[4].PostTitle%></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <%- include('footer') -%>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="close-nav" class="close-nav" onclick="closeNav()"></div>
+</body>

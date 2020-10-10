@@ -1,0 +1,903 @@
+#lead-top-wrap{
+    display: none;
+}
+.topnav{
+    position: fixed;
+    z-index: 10;
+}
+#main-body-wrap{
+    padding-top: 80px;
+}
+#site-content{
+    background-image: url("../imgs/contactuss.png");
+    padding: 200px;
+    background-size: cover;
+
+}
+
+.contact-box{
+    padding:30px 40px;
+    margin: 90px 0;
+    background-color:#fff;
+    border-radius:30px}
+
+.contact-box input{
+    margin-top:10px;
+    width: 90%;
+    border:none;
+    border-bottom:1px solid #eee;
+    padding-left:0;
+    padding-bottom:10px
+}
+.contact-box input:focus{
+    outline:none
+}
+.icon-1{
+    color: #00747B;
+}
+.info span{
+    font-size: 20px;
+    color: #00747B;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.contact-box .btn-submit{
+
+    font-style:normal;
+    font-weight:600;
+    font-size:16px;
+    line-height:20px;
+    background-color:#00747B;
+    border-radius:20px;
+    padding:10px 70px;
+    margin-top:20px;
+    margin-bottom:10px;
+    text-align:center;
+    text-transform:none;
+}
+.contact-box .btn-submit:hover{
+    color:#fff;
+    background-color:#FFA151;
+    text-decoration:none}
+
+.title-page{
+    margin: 10px 0;
+    font-size:36px;
+    font-weight:600;
+    color:#00747B;
+    letter-spacing:0;
+    position:relative;
+    margin-bottom:50px}
+.title-page:before{
+    position:absolute;
+    bottom:-30px;
+    height:14px;
+    width:191px;
+    left:0;
+    background-size:cover
+}
+#calltrap-btn {
+
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    height: 64px;
+    line-height: 100px;
+    opacity: 0.7;
+    position: fixed;
+    right: 35px;
+    top: 155px;
+    text-align: center;
+    width: 64px;
+    z-index: 9999;
+    -webkit-animation: calltrap_opacity 3s infinite linear;
+    -moz-animation: calltrap_opacity 3s infinite linear;
+    -o-animation: calltrap_opacity 3s infinite linear;
+    animation: calltrap_opacity 3s infinite linear
+}
+/*input*/
+/*phần tử phủ toàn màn hình*/
+#over {
+    display: none;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 999;
+}
+a, a:visited, a:active{
+    text-decoration:none;
+}
+.login
+{
+    border-radius: 5px;
+    background-color: #337ab7   ;
+    height:auto;
+    width:450px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:14px;
+    padding-bottom:5px;
+    display:none;
+    overflow:hidden;
+    position:absolute;
+    z-index:99999;
+    top:10%;
+    left:50%;
+    margin:auto;
+}
+
+.login .login_title
+{
+    color:white;
+    font-size:16px;
+    padding:8px 0 5px 8px;
+    text-align:left;
+}
+
+.login-content label {
+    display: block;
+    padding-bottom: 7px;
+}
+
+.login-content span {
+    display: block;
+}
+.login-content
+{
+    padding-left:35px;
+    background-color:white;
+    margin-left:5px;
+    margin-right:5px;
+    height:auto;
+    padding-top:15px;
+    overflow:hidden;
+}
+
+.img-close {
+    width: 50px;
+    height: 40px;
+    float: right;
+    margin-top:-43px;
+    margin-right:5px
+}
+.button{
+    display: inline-block;
+    min-width: 46px;
+    text-align: center;
+    color: #444;
+    font-size: 14px;
+    font-weight: 700;
+    height: 36px;
+    padding: 0px 8px;
+    line-height: 36px;
+    border-radius: 4px;
+    transition: all 0.218s ease 0s;
+    border: 1px solid #DCDCDC;
+    background-color: #F5F5F5;
+    background-image: -moz-linear-gradient(center top , #F5F5F5, #F1F1F1);
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid #DCDCDC;
+    text-decoration: none;
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+}
+.login input
+{
+    border:1px solid #D5D5D5;
+    border-radius:5px;
+    box-shadow:1px 1px 5px rgba(0,0,0,.07) inset;
+    color:black;
+    font:12px/25px "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    height:28px;
+    padding:0px 8px;
+    word-spacing:0.1em;
+    width:300px;
+}
+.submit-button{
+    display: inline-block;
+    padding: auto;
+    margin: 15px 75px;
+    width: 150px;
+}
+/*iconphone*/
+#calltrap-btn.calltrap_offline {
+    background-color: #1CB2ED
+}
+
+#calltrap-ico {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border: 0;
+    -webkit-border-radius: 50% !important;
+    border-radius: 50% !important;
+    -o-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-animation: uptocallmini 1.5s 0s ease-out infinite;
+    -moz-animation: uptocallmini 1.5s 0s ease-out infinite;
+    -o-animation: uptocallmini 1.5s 0s ease-out infinite;
+    animation: uptocallmini 1.5s 0s ease-out infinite
+}
+
+#calltrap-ico:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    background-image: url("../imgs/phone-call-png-4.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-animation: calltrap_spin 3s infinite linear;
+    -moz-animation: calltrap_spin 3s infinite linear;
+    -o-animation: calltrap_spin 3s infinite linear;
+    animation: calltrap_spin 3s infinite linear
+}
+
+.calltrap_offline #calltrap-ico {
+    -webkit-animation: uptocallmini_offline 1.5s 0s ease-out infinite;
+    -moz-animation: uptocallmini_offline 1.5s 0s ease-out infinite;
+    -o-animation: uptocallmini_offline 1.5s 0s ease-out infinite;
+    animation: uptocallmini_offline 1.5s 0s ease-out infinite
+}
+
+#calltrap-overlay {
+    background-color: #191919;
+    background-color: rgba(25, 25, 25, 0.9);
+    position: fixed;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: none
+}
+
+#calltrap-overlay .b-calltrap-overlay {
+    display: table;
+    width: 100%;
+    height: 100%
+}
+
+#calltrap-overlay .b-calltrap-overlay__header, #calltrap-overlay .b-calltrap-overlay__body, #calltrap-overlay .b-calltrap-overlay__footer {
+    display: table-row;
+    padding: 0;
+    margin: 0
+}
+
+#calltrap-overlay .b-calltrap-overlay__header-block, #calltrap-overlay .b-calltrap-overlay__body-block, #calltrap-overlay .b-calltrap-overlay__footer-block {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+
+#calltrap-overlay .b-calltrap-overlay__body-block {
+    padding: 0 7px
+}
+
+#calltrap-overlay .b-calltrap-overlay__header, #calltrap-overlay .b-calltrap-overlay__footer {
+    height: 1px
+}
+
+#calltrap-overlay .b-calltrap__container {
+    background-color: white;
+    border: 5px solid #2074a1;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.3;
+    position: relative;
+    font-family: Tahoma, Arial, self-serif !important
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+    #calltrap-overlay .b-calltrap__container {
+        width: 290px
+    }
+}
+
+#calltrap-overlay .b-calltrap__close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease
+}
+
+#calltrap-overlay .b-calltrap__close:hover {
+    opacity: 1
+}
+
+#calltrap-success, #calltrap-form {
+    display: block
+}
+
+#calltrap-success .b-calltrap_form__fields, #calltrap-form .b-calltrap_form__fields {
+    margin: 20px 25px 35px
+}
+
+#calltrap-success .b-calltrap_form__title, #calltrap-form .b-calltrap_form__title {
+    font-size: 20px;
+    margin: 0 0 17px;
+    text-align: left
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+    #calltrap-success .b-calltrap_form__title, #calltrap-form .b-calltrap_form__title {
+        padding-right: 20px
+    }
+}
+
+#calltrap-success .b-calltrap_form__text, #calltrap-form .b-calltrap_form__text {
+    text-align: left
+}
+
+#calltrap-success .b-calltrap_form__text p, #calltrap-form .b-calltrap_form__text p {
+    margin: 0 0 0.55em
+}
+
+#calltrap-success .b-calltrap_form__input, #calltrap-form .b-calltrap_form__input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 0 15px 0;
+    height: 44px;
+    line-height: 40px;
+    background-color: white;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    outline: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+    #calltrap-success .b-calltrap_form__input, #calltrap-form .b-calltrap_form__input {
+        margin-bottom: 13px
+    }
+}
+
+#calltrap-success .b-calltrap_form__input.error, #calltrap-form .b-calltrap_form__input.error {
+    background-color: #ffc0c0;
+    color: red;
+    border-color: red
+}
+
+#calltrap-success .b-calltrap_form__input:disabled, #calltrap-form .b-calltrap_form__input:disabled {
+    background-color: #eee;
+    border-color: #bdbdbd;
+    cursor: default
+}
+
+#calltrap-success .b-calltrap_form__input:focus, #calltrap-form .b-calltrap_form__input:focus {
+    border: 2px solid #2074a1
+}
+
+#calltrap-success .b-calltrap_form__submit, #calltrap-form .b-calltrap_form__submit {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #2074a1;
+    border: 2px solid #2074a1;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    height: 44px;
+    line-height: 40px;
+    outline: medium none;
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    outline: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+    #calltrap-success .b-calltrap_form__submit, #calltrap-form .b-calltrap_form__submit {
+        width: 100%
+    }
+}
+
+#calltrap-success .b-calltrap_form__submit:hover, #calltrap-form .b-calltrap_form__submit:hover {
+    background-color: #1c658c
+}
+
+#calltrap-success .b-calltrap_form__submit:disabled, #calltrap-form .b-calltrap_form__submit:disabled {
+    background-color: #bdbdbd !important;
+    cursor: default
+}
+
+#calltrap-success .b-calltrap_form__controls, #calltrap-form .b-calltrap_form__controls {
+    margin: 20px 0 0;
+    padding: 0;
+    padding: 0 200px 0 0
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+    #calltrap-success .b-calltrap_form__controls, #calltrap-form .b-calltrap_form__controls {
+        padding: 0
+    }
+}
+
+#calltrap-success .b-calltrap_form__controls-item, #calltrap-form .b-calltrap_form__controls-item {
+    position: relative;
+    float: right
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+    #calltrap-success .b-calltrap_form__controls-item, #calltrap-form .b-calltrap_form__controls-item {
+        float: none
+    }
+}
+
+#calltrap-success .b-calltrap_form__controls-left, #calltrap-form .b-calltrap_form__controls-left {
+    margin-left: -100%;
+    width: 100%
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+    #calltrap-success .b-calltrap_form__controls-left, #calltrap-form .b-calltrap_form__controls-left {
+        margin-left: 0
+    }
+}
+
+#calltrap-success .b-calltrap_form__controls-right, #calltrap-form .b-calltrap_form__controls-right {
+    margin-right: -200px;
+    overflow: visible;
+    width: 200px;
+    text-align: right
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+    #calltrap-success .b-calltrap_form__controls-right, #calltrap-form .b-calltrap_form__controls-right {
+        margin-right: 0;
+        width: auto;
+        text-align: left
+    }
+}
+
+#calltrap-success .b-calltrap_form__controls-clear, #calltrap-form .b-calltrap_form__controls-clear {
+    clear: both
+}
+
+#calltrap-success {
+    display: none
+}
+
+#calltrap-overlay.calltrap_offline .b-calltrap_form__submit {
+    background-color: #1CB2ED
+}
+
+#calltrap-overlay.calltrap_offline .b-calltrap_form__submit:hover {
+    background-color: #2e8c1c
+}
+
+#calltrap-overlay.calltrap_offline .b-calltrap_form__input:focus {
+    border-color: #1CB2ED
+}
+
+#calltrap-overlay.calltrap_offline .b-calltrap__container {
+    border-color: #1CB2ED
+}
+
+@-webkit-keyframes calltrap_opacity {
+    0% {
+        opacity: 1
+    }
+    57% {
+        opacity: 0.75
+    }
+    75% {
+        opacity: 0.95
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes calltrap_opacity {
+    0% {
+        opacity: 1
+    }
+    57% {
+        opacity: 0.75
+    }
+    75% {
+        opacity: 0.95
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes calltrap_opacity {
+    0% {
+        opacity: 1
+    }
+    57% {
+        opacity: 0.75
+    }
+    75% {
+        opacity: 0.95
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes calltrap_opacity {
+    0% {
+        opacity: 1
+    }
+    57% {
+        opacity: 0.75
+    }
+    75% {
+        opacity: 0.95
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes calltrap_spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    30% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    33% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    36% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    39% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    42% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    45% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    48% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+        opacity: 1
+    }
+    51% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    54% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    57% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes calltrap_spin {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    30% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    33% {
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    36% {
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    39% {
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    42% {
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    45% {
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    48% {
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg);
+        opacity: 1
+    }
+    51% {
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    54% {
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    57% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes calltrap_spin {
+    0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    30% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    33% {
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    36% {
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    39% {
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    42% {
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    45% {
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    48% {
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+        opacity: 1
+    }
+    51% {
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    54% {
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    57% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes calltrap_spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    30% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    33% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    36% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    39% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    42% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    45% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    48% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+        opacity: 1
+    }
+    51% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+    54% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+    57% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@-webkit-keyframes uptocallmini {
+    0% {
+        -webkit-box-shadow: 0 0 8px 6px rgba(32, 116, 161, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(32, 116, 161, 0);
+        box-shadow: 0 0 8px 6px rgba(32, 116, 161, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(32, 116, 161, 0)
+    }
+    10% {
+        -webkit-box-shadow: 0 0 8px 6px #2074a1, 0 0 12px 10px transparent, 0 0 12px 14px #2074a1;
+        box-shadow: 0 0 8px 6px #2074a1, 0 0 12px 10px transparent, 0 0 12px 14px #2074a1
+    }
+    100% {
+        -webkit-box-shadow: 0 0 8px 6px rgba(32, 116, 161, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(32, 116, 161, 0);
+        box-shadow: 0 0 8px 6px rgba(32, 116, 161, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(32, 116, 161, 0)
+    }
+}
+
+@-moz-keyframes uptocallmini {
+    0% {
+        box-shadow: 0 0 8px 6px rgba(32, 116, 161, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(32, 116, 161, 0)
+    }
+    10% {
+        box-shadow: 0 0 8px 6px #2074a1, 0 0 12px 10px transparent, 0 0 12px 14px #2074a1
+    }
+    100% {
+        box-shadow: 0 0 8px 6px rgba(32, 116, 161, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(32, 116, 161, 0)
+    }
+}
+
+@-o-keyframes uptocallmini {
+    0% {
+        box-shadow: 0 0 8px 6px rgba(32, 116, 161, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(32, 116, 161, 0)
+    }
+    10% {
+        box-shadow: 0 0 8px 6px #2074a1, 0 0 12px 10px transparent, 0 0 12px 14px #2074a1
+    }
+    100% {
+        box-shadow: 0 0 8px 6px rgba(32, 116, 161, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(32, 116, 161, 0)
+    }
+}
+
+@keyframes uptocallmini {
+    0% {
+        -webkit-box-shadow: 0 0 8px 6px rgba(32, 116, 161, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(32, 116, 161, 0);
+        box-shadow: 0 0 8px 6px rgba(32, 116, 161, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(32, 116, 161, 0)
+    }
+    10% {
+        -webkit-box-shadow: 0 0 8px 6px #2074a1, 0 0 12px 10px transparent, 0 0 12px 14px #2074a1;
+        box-shadow: 0 0 8px 6px #2074a1, 0 0 12px 10px transparent, 0 0 12px 14px #2074a1
+    }
+    100% {
+        -webkit-box-shadow: 0 0 8px 6px rgba(32, 116, 161, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(32, 116, 161, 0);
+        box-shadow: 0 0 8px 6px rgba(32, 116, 161, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(32, 116, 161, 0)
+    }
+}
+
+@-webkit-keyframes uptocallmini_offline {
+    0% {
+        -webkit-box-shadow: 0 0 8px 6px rgba(53, 161, 32, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(53, 161, 32, 0);
+        box-shadow: 0 0 8px 6px rgba(53, 161, 32, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(53, 161, 32, 0)
+    }
+    10% {
+        -webkit-box-shadow: 0 0 8px 6px #35A120, 0 0 12px 10px transparent, 0 0 12px 14px #35A120;
+        box-shadow: 0 0 8px 6px #35A120, 0 0 12px 10px transparent, 0 0 12px 14px #35A120
+    }
+    100% {
+        -webkit-box-shadow: 0 0 8px 6px rgba(53, 161, 32, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(53, 161, 32, 0);
+        box-shadow: 0 0 8px 6px rgba(53, 161, 32, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(53, 161, 32, 0)
+    }
+}
+
+@-moz-keyframes uptocallmini_offline {
+    0% {
+        box-shadow: 0 0 8px 6px rgba(53, 161, 32, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(53, 161, 32, 0)
+    }
+    10% {
+        box-shadow: 0 0 8px 6px #35A120, 0 0 12px 10px transparent, 0 0 12px 14px #35A120
+    }
+    100% {
+        box-shadow: 0 0 8px 6px rgba(53, 161, 32, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(53, 161, 32, 0)
+    }
+}
+
+@-o-keyframes uptocallmini_offline {
+    0% {
+        box-shadow: 0 0 8px 6px rgba(53, 161, 32, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(53, 161, 32, 0)
+    }
+    10% {
+        box-shadow: 0 0 8px 6px #35A120, 0 0 12px 10px transparent, 0 0 12px 14px #35A120
+    }
+    100% {
+        box-shadow: 0 0 8px 6px rgba(53, 161, 32, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(53, 161, 32, 0)
+    }
+}
+
+@keyframes uptocallmini_offline {
+    0% {
+        -webkit-box-shadow: 0 0 8px 6px rgba(53, 161, 32, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(53, 161, 32, 0);
+        box-shadow: 0 0 8px 6px rgba(53, 161, 32, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(53, 161, 32, 0)
+    }
+    10% {
+        -webkit-box-shadow: 0 0 8px 6px #1CB2ED, 0 0 12px 10px transparent, 0 0 12px 14px #1CB2ED;
+        box-shadow: 0 0 8px 6px #1CB2ED, 0 0 12px 10px transparent, 0 0 12px 14px #1CB2ED
+    }
+    100% {
+        -webkit-box-shadow: 0 0 8px 6px rgba(53, 161, 32, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(53, 161, 32, 0);
+        box-shadow: 0 0 8px 6px rgba(53, 161, 32, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(53, 161, 32, 0)
+    }
+}

@@ -1,0 +1,214 @@
+<div id="dnbc-site" class="left relative" style="transform: none">
+    <div id="site-wall" class="left relative" style="transform: none">
+        <div id="lead-top-wrap">
+            <div id="lead-top-in">
+                <div id="lead-top">
+                    <a href="#" target="_blank">
+                        <img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="http://mvpthemes.com/zoxpress/zoxpress-network2/wp-content/uploads/sites/7/2020/04/zoxpress-leader.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="site-main">
+            <div id="header" class="left relative">
+                <div id="sideNavigation" class="sidenav sidenav-left">
+                    <div class="brand" id="brand">
+                        <a href="/" class="brand-logo">
+                            <img src="imgs/dnbc.png" width="92" height="20" alt="logo">
+                        </a>
+                        <button class="brand-toggle btn btn-sm" id="aside-toggle" onclick="closeNav()">
+                            <i class="fas fa-angle-double-left fa-2x"></i>
+                        </button>
+                    </div>
+                    <div class="aside-menu-wrapper" id="aside-menu-wrapper">
+                        <div id="aside-menu" class="aside-menu">
+                            <ul class="menu-nav">
+                                <li class="menu-item1 menu-item1-active" style="padding-bottom: 30px">
+                                    <a href="javascript:;" class="menu-link" style="cursor: default">
+                                        <span class="menu-icon menu-icon1"><i class="fas fa-layer-group"></i></span>
+                                        <span class="menu-text">Menu</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item1 menu-item-submenu">
+                                    <a href="/categories/<%- menu[2].CategoryID %>" class="menu-link">
+                                        <span class="menu-icon menu-icon1" id="menu-icon1"><i class="fas fa-globe"></i></span>
+
+                                        <span class="menu-text" id="menu-text1"><%-menu[2].CategoryName %></span>
+
+                                    </a>
+                                </li>
+                                <li class="menu-item1 menu-item-submenu">
+                                    <a href="javascript:;" class="menu-link">
+                                        <span class="menu-icon menu-icon1"><i class="fas fa-business-time"></i></span>
+                                        <span class="menu-text"><%-menu[0].CategoryName %></span>
+                                        <i class="fas fa-chevron-right menu-arrow menu-arrow-normal" id="menu-arrow-normal2" onclick="openSubmenu2()"></i>
+                                        <i class="fas fa-chevron-down menu-arrow menu-arrow-open" id="menu-arrow-open2" onclick="closeSubmenu2()"></i>
+                                    </a>
+                                    <div class="menu-submenu" id="menu-submenu2">
+                                        <ul class="menu-subnav">
+                                            <li class="menu-item1 menu-item-submenu">
+                                                <a href="/categories/<%- submenu[0].CategoryID %>" class="menu-link menu-toggle">
+                                                    <span class="menu-bullet">
+                                                        -
+                                                    </span>
+                                                    <span class="menu-text">
+                                                     <%-submenu[0].CategoryName %>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item1 menu-item-submenu">
+                                                <a href="/categories/<%- submenu[1].CategoryID %>" class="menu-link menu-toggle">
+                                                    <span class="menu-bullet">
+                                                        -
+                                                    </span>
+                                                    <span class="menu-text">
+                                                    <%-submenu[1].CategoryName %>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item1 menu-item-submenu">
+                                                <a href="/categories/<%- submenu[2].CategoryID %>" class="menu-link menu-toggle">
+                                                    <span class="menu-bullet">
+                                                        -
+                                                    </span>
+                                                    <span class="menu-text">
+                                                     <%-submenu[2].CategoryName %>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item1 menu-item-submenu">
+                                    <a href="javascript:;" class="menu-link">
+                                        <span class="menu-icon menu-icon1"><i class="fas fa-handshake"></i></span>
+                                        <span class="menu-text"><%-menu[1].CategoryName %></span>
+                                        <i class="fas fa-chevron-right menu-arrow menu-arrow-normal" id="menu-arrow-normal3" onclick="openSubmenu3()"></i>
+                                        <i class="fas fa-chevron-down menu-arrow menu-arrow-open" id="menu-arrow-open3" onclick="closeSubmenu3()"></i>
+                                    </a>
+                                    <div class="menu-submenu" id="menu-submenu3">
+                                        <ul class="menu-subnav">
+                                            <li class="menu-item1 menu-item-submenu">
+                                                <a href="/categories/<%- submenu[3].CategoryID %>" class="menu-link menu-toggle">
+                                                    <span class="menu-bullet">
+                                                        -
+                                                    </span>
+                                                    <span class="menu-text">
+                                                      <%-submenu[3].CategoryName %>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item1 menu-item-submenu">
+                                                <a href="/categories/<%- submenu[4].CategoryID %>" class="menu-link menu-toggle">
+                                                    <span class="menu-bullet">
+                                                        -
+                                                    </span>
+                                                    <span class="menu-text">
+                                                   <%-submenu[4].CategoryName %>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item1 menu-item-submenu">
+                                    <a href="javascript:;" class="menu-link">
+                                        <span class="menu-icon menu-icon1"><i class="fas fa-futbol"></i></span>
+                                        <span class="menu-text"> <%-menu[3].CategoryName %></span>
+                                        <i class="fas fa-chevron-right menu-arrow menu-arrow-normal" id="menu-arrow-normal4" onclick="openSubmenu4()"></i>
+                                        <i class="fas fa-chevron-down menu-arrow menu-arrow-open" id="menu-arrow-open4" onclick="closeSubmenu4()"></i>
+                                    </a>
+                                    <div class="menu-submenu" id="menu-submenu4">
+                                        <ul class="menu-subnav">
+                                            <li class="menu-item1 menu-item-submenu">
+                                                <a href="/categories/<%- submenu[5].CategoryID %>" class="menu-link menu-toggle">
+                                                    <span class="menu-bullet">
+                                                        -
+                                                    </span>
+                                                    <span class="menu-text">
+                                                     <%-submenu[5].CategoryName %>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item1 menu-item-submenu">
+                                                <a href="/categories/<%- submenu[6].CategoryID %>" class="menu-link menu-toggle">
+                                                    <span class="menu-bullet">
+                                                        -
+                                                    </span>
+                                                    <span class="menu-text">
+                                                     <%-submenu[6].CategoryName %>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item1 menu-item-submenu">
+                                        <a href="/about-us" class="menu-link">
+                                            <span class="menu-icon menu-icon1"><i class="fas fa-address-card"></i></span>
+                                            <span class="menu-text"><%-menu[4].CategoryName %></span>
+                                        </a>
+                                </li>
+                                <li class="menu-item1 menu-item-submenu">
+                                        <a href="/contact-us" class="menu-link">
+                                            <span class="menu-icon menu-icon1"><i class="fas fa-id-card-alt"></i></span>
+                                            <span class="menu-text"><%-menu[5].CategoryName %></span>
+                                        </a>
+                                </li>
+                                <li class="menu-item1 menu-item-submenu">
+                                        <a href="/advertisement" class="menu-link">
+                                            <span class="menu-icon menu-icon1"><i class="fas fa-ad"></i></span>
+                                            <span class="menu-text"><%-menu[6].CategoryName %></span>
+                                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav class="topnav col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="nav-left col-xs-2 col-sm-2 col-md-2 col-lg-1">
+                            <a href="#"  class="open-nav" onclick="openNav()">
+                                <svg width="30" height="30" id="icoOpen">
+                                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="nav-mid col-xs-10 col-sm-10 col-md-10 col-lg-2">
+                            <a href="/">
+                                <img src="imgs/dnbc.png" width="150" height="50">
+                            </a>
+                        </div>
+                        <ul class="menu_1 col-lg-9">
+                            <li class="dropdown parent-menu">
+                                <a href="/categories/<%- menu[2].CategoryID %>" class="menu-item"><%-menu[2].CategoryName %></a>
+                            </li>
+                            <li class="dropdown parent-menu">
+                                <a href="javascript:;"  data-toggle="dropdown" class="menu-item"><%-menu[0].CategoryName %></a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                    <li><a href="/categories/<%- submenu[0].CategoryID %>"><%-submenu[0].CategoryName %></a></li>
+                                    <li><a href="/categories/<%- submenu[1].CategoryID %>"><%-submenu[1].CategoryName %></a></li>
+                                    <li><a href="/categories/<%- submenu[2].CategoryID %>"><%-submenu[2].CategoryName %></a></li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown parent-menu">
+                                <a href="javascript:;"  data-toggle="dropdown" class="menu-item"><%-menu[1].CategoryName %></a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                    <li><a href="/categories/<%- submenu[3].CategoryID %>"><%-submenu[3].CategoryName %></a></li>
+                                    <li><a href="/categories/<%- submenu[4].CategoryID %>"><%-submenu[4].CategoryName %></a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown parent-menu">
+                                <a href="javascript:;"  data-toggle="dropdown" class="menu-item"><%-menu[3].CategoryName %></a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                    <li><a href="/categories/<%- submenu[5].CategoryID %>"><%-submenu[5].CategoryName %></a></li>
+                                    <li><a href="/categories/<%- submenu[6].CategoryID %>"><%-submenu[6].CategoryName %></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>

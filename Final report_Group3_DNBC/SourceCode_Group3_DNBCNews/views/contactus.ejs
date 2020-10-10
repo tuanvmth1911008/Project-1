@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head') -%>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contactus.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
+    <style>
+        #map {
+            height: 500px;
+            width:100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<%- include('header') -%>
+<div id="site-content" role="main">
+     <div class="container ">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="title-page">
+                        CONTACT US
+                    </div>
+                    <div class="sub-title">
+                        <h2 id="sub_text_1" class="icon-1">Take the opportunity and success with us</h2>
+                        <h3 id="sub_text_1" class="icon-1">Get started now with DHBC</h3>
+                    </div>
+                    <div class="info">
+                        <span id="sub_text_1">Hanoi advertising office</span>
+                        <p id="sub_text_1">FPT Building No. 8 Ton That Thuyet - Hanoi City​</p>
+                        <p id="sub_text_1" class="icon-2">024 7300 9999 (Ext: 4541 – 4566 - 4567) <br>Hotline: 090 293 9644​</p>
+                        <span id="sub_text_1">HoChiMinh advertising office</span>
+                        <p id="sub_text_1">6th Floor, Exchange Tower Building - No. 1 Nam Ky Khoi Nghia, P. Nguyen Thai Binh, District 1, Ho Chi Minh City</p>
+                        <p id="sub_text_1" class="icon-2">028 7300 9999 (Ext: 8560 – 8578) <br>Hotline: 090 293 9644​</p>
+                        <a href="#login-box" class="login-window btn btn-primary">CONTACT NOW</a>
+                        <div id="login-box" class="login">
+                            <p class="login_title">CONTACT NOW</p>
+                            <a href="#" class="close"><img src="/imgs/close.png" class="img-close" title="Close Window" alt="Close" /></a>
+                            <form method="post" class="login-content" action="#">
+                                <label class="Name">
+                                    <span>Name</span>
+                                    <input id="name" name="name" value="" type="text" autocomplete="on" placeholder="Name" required/>
+                                </label>
+                                <label class="email">
+                                    <span>Email</span>
+                                    <input id="email" name="email" value="" type="email" placeholder="email" required/>
+                                </label>
+                                <label class="Telephone">
+                                    <span>Telephone</span>
+                                    <input id="Telephone" name="Telephone" value="" type="Telephone" placeholder="Telephone" required/>
+                                </label>
+                                <label class="question">
+                                    <span>Make a question</span>
+                                    <textarea name="comment" id="comment" cols="50" rows="5" required="required" maxlength="10000" minlength="2" placeholder="Question"></textarea>
+                                </label>
+                                <button class="btn btn-warning" type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <a id="calltrap-btn" class="b-calltrap-btn calltrap_offline hidden-phone visible-tablet" href="tel:0936307069"><div id="calltrap-ico"></div></a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="tab-content content-map">
+                        <div id="map"></div>
+                        <script>
+                            var map;
+                            function initMap() {
+                                var position = {
+                                    lat: 21.0288289,
+                                    lng: 105.7817819
+                                };
+                                map = new google.maps.Map(document.getElementById('map'), {
+                                    center: position,
+                                    zoom: 16
+                                });
+                                var marker = new google.maps.Marker({
+                                    position:position,
+                                    map: map,
+                                    label: {text:'DNBC',color:"black"}
+                                });
+                            }
+                        </script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaj0mHlR-keu-9hsR6d-gB0L9BclG04rk&callback=initMap"
+                                async defer></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+    <%- include('footer') -%>
+<script src="jquery/advertisement.js"></script>
+<script src="jquery/typeit.min.js"></script>
+</body>
+</html>
