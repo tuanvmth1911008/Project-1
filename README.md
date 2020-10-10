@@ -1,2 +1,2 @@
 # Project-1
-Can not run because the data has been deleted by the school
+The website could not run because the database was deleted by the school
